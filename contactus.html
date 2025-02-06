@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fresh Bite</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-utensils"></i>
+            <span>Fresh Bite </span>
+        </div>
+        <ul class="nav-links">
+            <li><a href=index.html"   ><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html" ><i class="fa-solid fa-address-card"></i> About us</a></li>
+                    <li><a href="services.html"  ><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="contactus.html" ><i class="fas fa-envelope"></i> Contact </a></li>
+        </ul>
+        <!-- <button class="order-now"></button> -->
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Our Location</h3>
+                    <p>123 Lal Chowk<br>Srinagar, Jammu and Kashmir</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone Number</h3>
+                    <p>+91 1206-209-212<br>Mon-Sun: 8am - 10pm</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Address</h3>
+                    <p>hello@Freshbite.com<br>support@Freshbite.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <form id="contactForm">
+                <div class="form-header">
+                    <h2>Send us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you soon!</p>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" id="firstName" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="lastName" required>
+                        <label for="lastName">Last Name</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email Address</label>
+                </div>
+
+                <div class="input-group">
+                    <select id="subject" required>
+                        <option value="">Select a Subject</option>
+                        <option value="catering">Catering Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="partnership">Partnership</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>
